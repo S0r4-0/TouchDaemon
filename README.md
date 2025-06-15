@@ -52,8 +52,8 @@ cd TouchDaemon
 git clone https://github.com/ocornut/imgui.git
 ```
 
-- Edit your device path (replace `/dev/input/eventX` in code or run script accordingly)
-- You can find the correct path using: `sudo libinput list-devices`
+- Edit your device path (replace `/dev/input/eventX` in [build.sh](./build.sh))
+- You can find the correct path using: `libinput list-devices | grep -iA10 "Touchpad"`
 
 ---
 
